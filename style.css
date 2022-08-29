@@ -1,100 +1,107 @@
 * {
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 150%;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
 }
-header{
-    position: relative;
-    width: 940px;
-    margin: 0 auto;
+header {
+  position: relative;
+  width: auto;
+  margin: 0 auto;
 }
 
 body {
-    background-image: url("fundo.jpg");
-
+  background-image: url("fundo.jpg");
 }
 
-
 main {
-    display: flex;
-    margin-left: 80px;
-    margin-bottom: 50px;
+  display: flex;
+  margin-left: 80px;
+  margin-bottom: 50px;
 }
 
 .input-texto {
-    margin-top: 90px;
-    background-color: #d8d8bd;
+  margin-top: 90px;
+  background-color: #d8d8bd;
 }
 
 .mensagem {
-    position: fixed;
-    margin-top: 20px;
-    margin-left: 90px;
-    background-image: url("boneco.png");
-    background-color: #d8d8bd;
-    background-repeat: no-repeat;
-    background-position: 18px;
-    background-size: 300px;
-
+  position: fixed;
+  margin-top: 20px;
+  margin-left: 90px;
+  background-image: url("boneco.png");
+  background-color: #d8d8bd;
+  background-repeat: no-repeat;
+  background-position: 18px;
+  background-size: 300px;
 }
-
+.encriptar {
+  background-color: #985717;
+  color: white;
+  font-size: 15px;
+  padding: 20px;
+  margin: 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
 .copiar {
-    position: relative;
-    margin-top: 330px;
-    margin-left: 205px;
-    background-color: #985717;
-    color: white;
-    cursor: pointer;
-    border-radius: 8px;
-    border: none;
-    padding: 15px auto;
-    
-
+  position: relative;
+  margin-top: 330px;
+  margin-left: 205px;
+  background-color: #985717;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  padding: 20px;
 }
-
-
-
 
 .botoes {
-    display: flex;
-    flex-direction: row;
-    margin-top: 20px;
-
-
-
-
-}
-
-.encriptar {
-    background-color: #985717;
-    color: white;
-    font-size: 18px;
-    width: 40%;
-    margin: 20px auto;
-    border: none;
-    border-radius: 8px;
-    font-weight: bold;
-    padding: 15px 0;
-    transition: 1s all;
-    cursor: pointer;
-}
-
-.desencriptar {
-    background-color: #985717;
-    color: white;
-    font-size: 18px;
-    width: 40%;
-    margin: 20px auto;
-    border: none;
-    border-radius: 8px;
-    font-weight: bold;
-    padding: 15px 0;
-    transition: 1s all;
-    cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
 }
 
 .informacao {
-    font-size: 20px;
-    color: #FFFFFF;
+  font-size: 16px;
+  color: #ffffff;
+}
+@media screen and (max-width: 480px) {
+  main {
+    display: block;
+    margin: 0;
+    padding: 50px;
+  }
+  section {
+    display: inline-block;
+    margin: 10px 10px;
+    padding: 0;
+  }
+  .input-texto,
+  .informacao,
+  .mensagem {
+    display: block;
+    width: 300px;
+  }
+
+  .encriptar,
+  .copiar {
+    display: inline-block;
+    margin: 5px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .mensagem,
+  .input-texto {
+    position: relative;
+  }
+  .mensagem {
+    background-position: 0px;
+    margin: 0px;
+  }
 }
